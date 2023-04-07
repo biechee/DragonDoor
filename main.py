@@ -333,7 +333,7 @@ while True:
 
                 if pool <= 0:
                     for i in range(num_players):
-                        player_chips[f"Player {i + 1}"] = -10
+                        player_chips[f"Player {i + 1}"] -= 10
                     pool = 10 * num_players
                 is_hole_card = True
                 # 標記遊戲結束
