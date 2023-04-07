@@ -328,8 +328,7 @@ while True:
                         # 投入金額到底池中
                         player_chips[f"Player {current_player}"] -= bet
                         pool += bet
-                    print(pool)
-                    print(player_chips)
+
 
                 if pool <= 0:
                     for i in range(num_players):
@@ -352,6 +351,8 @@ while True:
                             (WINDOW_WIDTH // 2 - player_chips_surface.get_width() // 2, 450))
                 pool_surface = font.render(f"Pool: {pool}", True, (0, 0, 0))
                 screen.blit(pool_surface, (WINDOW_WIDTH // 2 - pool_surface.get_width() // 2, 250))
+                print(pool)
+                print(player_chips)
 
                 if current_player < num_players:
                     current_player += 1
