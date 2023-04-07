@@ -37,7 +37,7 @@ card3 = None
 bet = 10
 
 # 創建字典儲存每個玩家的籌碼數量
-num_players = 0
+num_players = 1
 player_chips = {}
 current_player = 1
 
